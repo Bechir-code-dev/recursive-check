@@ -34,18 +34,18 @@ console.log(fibonacciJS(10));
 
 
 //power function
-function power(base, exponent) {
+function powerN(base, expo) {
     // ay haja 9owet 0 tatla3 1 w ntakeha ala jnab
-    if (exponent === 0) {
+    if (expo === 0) {
         return 1;
     }
-    else if (exponent > 0) {
-        return base * power(base, exponent - 1);
+    else if (expo > 0) {
+        return base * powerN(base, expo - 1);
     }
     // hedhi negative 9owa yebda wehed rkik 
     else {
-        return 1 / power(base, -exponent);
+        return 1 / powerN(base, -expo);
     }
 }
-let result = power(2, 2); 
+let result = powerN(2, 2); 
 console.log(result);  
