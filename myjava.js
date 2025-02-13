@@ -10,6 +10,7 @@ else {
     console.log(`${year} is not a leap year.`);
 }
 
+
 // ticketprice
 function getTicketPrice(age) {
     if (age <= 12) {
